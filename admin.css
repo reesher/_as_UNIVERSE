@@ -1,0 +1,8 @@
+/*
+Admin Styles
+*/
+
+/* Fix TGMPA NOTIF*/
+div#setting-error-tgmpa {
+    display: block;
+}
