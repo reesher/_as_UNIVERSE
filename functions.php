@@ -44,7 +44,7 @@ function _as_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', '_as' ),
+		'primary' => esc_html__( 'Hlavné menu', '_as' ),
 	) );
 
 	/*
@@ -119,6 +119,8 @@ function _as_scripts() {
 	wp_enqueue_script( '_as-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( '_as-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/js/smooth-scroll.js', array(), '0.1', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -158,28 +160,25 @@ require get_template_directory() . '/inc/jetpack.php';
  */
  require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
   
- add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
+ add_action( 'tgmpa_register', 'universe_required_plugins' );
   
  /**
-10  * Register the required plugins for this theme.
-11  *
-12  *  <snip />
-13  *
-14  * This function is hooked into tgmpa_init, which is fired within the
-15  * TGM_Plugin_Activation class constructor.
-16  */
-	function my_theme_register_required_plugins() {
+* Register the required plugins for this theme.
+* This function is hooked into tgmpa_init, which is fired within the
+* TGM_Plugin_Activation class constructor.
+*/
+	function universe_required_plugins() {
 	/*
 	* Array of plugin arrays. Required keys are name and slug.
 	* If the source is NOT from the .org repo, then source is also required.
 	*/
 	$plugins = array(
  
-// This is an example of how to include a plugin bundled with a theme.
+// Include Visual Composer
 	array(
-				'name'               => 'Visual Composer', // The plugin name.
-				'slug'               => 'visual_composer', // The plugin slug (typically the folder name).
-				'source'             => get_stylesheet_directory() . '/lib/plugins/js_composer.zip', // The plugin source.
+				'name'               => 'Visual Composer', 
+				'slug'               => 'visual_composer', 
+				'source'             => get_stylesheet_directory() . '/lib/plugins/js_composer.zip', 
 				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 				'version'            => "4.9.2", // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -187,28 +186,38 @@ require get_template_directory() . '/inc/jetpack.php';
 				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
 ),
-
-// This is an example of how to include a plugin from the WordPress Plugin Repository.
-array(
-'name'      => 'BuddyPress',
-'slug'      => 'buddypress',
-'required'  => false,
+// Include Revolution Slider
+	array(
+				'name'               => 'Revolution Slider', 
+				'slug'               => 'rev-slider',
+				'source'             => get_stylesheet_directory() . '/lib/plugins/revslider.zip', 
+				'required'           => false, 
+				'version'            => "5.1.6",
+				'force_activation'   => false, 
+				'force_deactivation' => false, 
+				'external_url'       => '',
+				'is_callable'        => '',
 ),
 
-// <snip />
+// Include Contact Form 7
+	array(
+				'name'      => 'Contact Form 7',
+				'slug'      => 'contact-form-7',
+				'required'  => false,
+),
 );
 
 /*
-48 	 * Array of configuration settings. Amend each line as needed.
-49 	 *
-50 	 * TGMPA will start providing localized text strings soon. If you already have translations of our standard
-51 	 * strings available, please help us make TGMPA even better by giving us access to these translations or by
-52 	 * sending in a pull-request with .po file(s) with the translations.
-53 	 *
-54 	 * Only uncomment the strings in the config array if you want to customize the strings.
-55 	 */
+* Array of configuration settings. Amend each line as needed.
+*
+* TGMPA will start providing localized text strings soon. If you already have translations of our standard
+* strings available, please help us make TGMPA even better by giving us access to these translations or by
+* sending in a pull-request with .po file(s) with the translations.
+*
+* Only uncomment the strings in the config array if you want to customize the strings.
+*/
 $config = array(
-'id'           => 'tgmpa',                 // Unique ID for hashing notices for multiple instances of TGMPA.
+'id'           => 'tgmpa-as_universe',                 // Unique ID for hashing notices for multiple instances of TGMPA.
 'default_path' => '',                      // Default absolute path to bundled plugins.
 'menu'         => 'instaluj-pluginy', // Menu slug.
 'parent_slug'  => 'themes.php',            // Parent menu slug.
@@ -216,16 +225,8 @@ $config = array(
 'has_notices'  => true,                    // Show admin notices or not.
 'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
-'is_automatic' => false,                   // Automatically activate plugins after installation or not.
+'is_automatic' => true,                   // Automatically activate plugins after installation or not.
 'message'      => '',                      // Message to output right before the plugins table.
-/*
-'strings'      => array(
-'page_title'                      => __( 'Install Required Plugins', 'theme-slug' ),
-'menu_title'                      => __( 'Install Plugins', 'theme-slug' ),
-// <snip>...</snip>
-'nag_type'                        => 'updated', // Determines admin notice type - can only be 'updated', 'update-nag' or 'error'.
-)
-*/
 );
 tgmpa( $plugins, $config );
 }
