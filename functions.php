@@ -209,6 +209,19 @@ add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 				'is_callable'        => '',
 ),
 
+// Include Afragen Github Updater
+	array(
+				'name'               => 'Git Updater', 
+				'slug'               => 'github-updater',
+				'source'             => get_stylesheet_directory() . '/lib/plugins/github-updater.zip', 
+				'required'           => false, 
+				'version'            => "5.1.6",
+				'force_activation'   => true, 
+				'force_deactivation' => false, 
+				'external_url'       => '',
+				'is_callable'        => '',
+),
+
 // Include Contact Form 7
 	array(
 				'name'      => 'Contact Form 7',
