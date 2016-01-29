@@ -1,56 +1,277 @@
-#, fuzzy
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: TGM-Plugin-Activation\n"
-"POT-Creation-Date: 2016-01-28 21:54+0100\n"
-"PO-Revision-Date: 2015-05-11 21:56+0100\n"
-"Last-Translator: Juliette Reinders Folmer <wpplugins_nospam@adviesenzo.nl>\n"
-"Language-Team: TGMPA\n"
-"Language: en_US\n"
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-01-28 21:13+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-01-29 17:36+0100\n"
+"Language-Team: \n"
 "X-Generator: Poedit 1.8.6\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SearchPathExcluded-1: example.php\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: sk\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: tgmpa.pot\n"
+"X-Poedit-SearchPath-1: _as.pot\n"
+
+# @ _s
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Hopá! Stránka sa nenašla."
+
+# @ _s
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Mrzí nás to. Skúste použit vyhľadávanie alebo prejdite na úvodnú stránku "
+"(chyba 404)."
+
+# @ _s
+#: 404.php:29
+msgid "Most Used Categories"
+msgstr "Najviac používané kategórie"
+
+# @ _s
+#. translators: %1$s: smiley
+#: 404.php:46
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Skúste sa pozrieť do mesačných archívov. %1$s"
+
+# @ _s
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Jeden komentár pre &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s komentáre pre &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s komentárov pre &ldquo;%2$s&rdquo;"
+
+# @ _s
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Navigácia komentárov"
+
+# @ _s
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Staršie komentáre"
+
+# @ _s
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Novšie komentáre"
+
+# @ _s
+#: comments.php:77
+msgid "Comments are closed."
+msgstr "Komentáre sú zatvorené."
+
+# @ _s
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+# @ _s
+#: footer.php:18
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Používame %s"
+
+# @ _s
+#: footer.php:20
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Šablóna: %1$s od %2$s."
+
+# @ _s
+#: functions.php:47
+msgid "Primary"
+msgstr "Hlavné"
+
+# @ _s
+#: functions.php:102
+msgid "Sidebar"
+msgstr "Bočné menu"
+
+# @ _s
+#: header.php:25
+msgid "Skip to content"
+msgstr "Pokračovať na obsah"
+
+# @ _s
+#: header.php:38
+msgid "Primary Menu"
+msgstr "Hlavné menu"
+
+# @ _s
+#: inc/template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Pridáne %s"
+
+# @ _s
+#: inc/template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "od %s"
+
+# @ _s
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:50 inc/template-tags.php:56
+msgid ", "
+msgstr ","
+
+# @ _s
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publikované v %1$s"
+
+# @ _s
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tagy %1$s"
+
+# @ _s
+#: inc/template-tags.php:64
+msgid "Leave a comment"
+msgstr "Zanechajte komentár"
+
+# @ _s
+#: inc/template-tags.php:64
+msgid "1 Comment"
+msgstr "1 Komentár"
+
+# @ _s
+#: inc/template-tags.php:64
+#, php-format
+msgid "% Comments"
+msgstr "% Komentáre"
+
+# @ _s
+#. translators: %s: Name of current post
+#: inc/template-tags.php:71 template-parts/content-page.php:32
+#, php-format
+msgid "Edit %s"
+msgstr "Upraviť %s"
+
+# @ _s
+#: search.php:18
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Výsledky vyhľadávania pre: %s"
+
+# @ _s
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nič sa nenašlo"
+
+# @ _s
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Ste pripravený publikovať váš prvý článok? <a href=\"%1$s\">Začnite tu</a>."
+
+# @ _s
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Prepáčte, nič sa nenašlo pre vaše kritéria. Skúste iné kľúčové slová."
+
+# @ _s
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Vyzéra to tak, že nemôžeme nájsť to čo hľadáte. Skúste vyhľadať pomoc."
+
+# @ _s
+#: template-parts/content-page.php:21 template-parts/content-single.php:25
+#: template-parts/content.php:34
+msgid "Pages:"
+msgstr "Stránky:"
+
+# @ _s
+#. translators: %s: Name of current post.
+#: template-parts/content.php:27
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Pokračujte v čítaní %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. Theme Name of the plugin/theme
+msgid "_s"
+msgstr "_s"
+
+# @ _s
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr "http://underscores.me/"
+
+# @ _s
+#. Description of the plugin/theme
+msgid ""
+"Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if "
+"you like. I'm a theme meant for hacking so don't use me as a <em>Parent "
+"Theme</em>. Instead try turning me into the next, most awesome, WordPress "
+"theme out there. That's what I'm here for."
+msgstr "Ahoj. Som štartér téma _s."
+
+# @ _s
+#. Author of the plugin/theme
+msgid "Automattic"
+msgstr "Automattic"
+
+# @ _s
+#. Author URI of the plugin/theme
+msgid "http://automattic.com/"
+msgstr "http://automattic.com/"
 
 #: class-tgm-plugin-activation.php:303
 msgid "Install Required Plugins"
 msgstr "Inštalácia potrebných plugniov"
 
 #: class-tgm-plugin-activation.php:304
-msgid "Inštalácia pluginov"
-msgstr ""
+msgid "Install Plugins"
+msgstr "Inštalácia modulov"
 
 #: class-tgm-plugin-activation.php:305
 #, php-format
-msgid "Nainštaloať plugin: %s"
-msgstr ""
+msgid "Installing Plugin: %s"
+msgstr "Nainštalovať plugin: %s"
 
 #: class-tgm-plugin-activation.php:306
 msgid "Niečo sa stalo z API."
-msgstr ""
+msgstr "Niečo sa stalo z API."
 
 #: class-tgm-plugin-activation.php:308
 #, php-format
-msgid "Táto téma vyžaduje tento plugin: %1$s."
-msgid_plural "Táto téma vyžaduje tieto pluginy: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Vyžaduje sa inštalácia tohoto modulu: %1$s."
+msgstr[1] "Vyžaduje sa inštalácia týchto modulov: %1$s."
+msgstr[2] "Vyžaduje sa inštalácia týchto modulov: %1$s."
 
 #: class-tgm-plugin-activation.php:313
 #, php-format
-msgid "Táto téma odporúča nainštalovať plugin: %1$s."
-msgid_plural "Táto téma odporúča nainštalovať tieto pluginy: %1$s."
-msgstr[0] ""
-msgstr[1] ""
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugin: %1$s."
+msgstr[0] "Odporúčame nainštalovať tento modul: %1$s."
+msgstr[1] "Odporúčame nainštalovať tieto moduly: %1$s."
+msgstr[2] "Odporúčame nainštalovať tieto moduly: %1$s."
 
 #: class-tgm-plugin-activation.php:318
 #, php-format
@@ -62,6 +283,7 @@ msgid_plural ""
 "plugins."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:323
 #, php-format
@@ -73,6 +295,7 @@ msgid_plural ""
 "maximum compatibility with this theme: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:328
 #, php-format
@@ -80,6 +303,7 @@ msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:333
 #, php-format
@@ -90,6 +314,7 @@ msgid_plural ""
 "plugins."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:338
 #, php-format
@@ -97,6 +322,7 @@ msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:343
 #, php-format
@@ -104,6 +330,7 @@ msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:348
 #, php-format
@@ -115,24 +342,28 @@ msgid_plural ""
 "plugins."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:353
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Začať inšťalovať modul"
+msgstr[1] "Začať inštalovať moduly"
+msgstr[2] "Začať inštalovať moduly"
 
 #: class-tgm-plugin-activation.php:358
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:363
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:368
 msgid "Return to Required Plugins Installer"
@@ -151,6 +382,7 @@ msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: class-tgm-plugin-activation.php:372
 #, php-format
@@ -171,7 +403,7 @@ msgstr ""
 
 #: class-tgm-plugin-activation.php:375
 msgid "Dismiss this notice"
-msgstr ""
+msgstr "Zrušiť tento oznam"
 
 #: class-tgm-plugin-activation.php:376
 msgid "Please contact the administrator of this site for help."
@@ -214,109 +446,113 @@ msgstr ""
 #: class-tgm-plugin-activation.php:1115 class-tgm-plugin-activation.php:2833
 msgctxt "plugin A *and* plugin B"
 msgid "and"
-msgstr ""
+msgstr "a"
 
 #: class-tgm-plugin-activation.php:1901
 #, php-format
 msgctxt "%s = version number"
 msgid "TGMPA v%s"
-msgstr ""
+msgstr "TGMPA v%s"
 
 #: class-tgm-plugin-activation.php:2182
 msgid "Required"
-msgstr ""
+msgstr "Vyžadované"
 
 #: class-tgm-plugin-activation.php:2185
 msgid "Recommended"
-msgstr ""
+msgstr "Odporúčané"
 
 #: class-tgm-plugin-activation.php:2202
 msgid "WordPress Repository"
-msgstr ""
+msgstr "WordPress repo"
 
 #: class-tgm-plugin-activation.php:2206
 msgid "External Source"
-msgstr ""
+msgstr "Externý zdroj"
 
 #: class-tgm-plugin-activation.php:2210
 msgid "Pre-Packaged"
-msgstr ""
+msgstr "Dostupný zo zdrojového súboru"
 
 #: class-tgm-plugin-activation.php:2229
 msgid "Not Installed"
-msgstr ""
+msgstr "Nie je nainštalovaný"
 
 #: class-tgm-plugin-activation.php:2233
 msgid "Installed But Not Activated"
-msgstr ""
+msgstr "Nainštalovaný alebo neaktivovaný"
 
 #: class-tgm-plugin-activation.php:2235
 msgid "Active"
-msgstr ""
+msgstr "Aktivovať"
 
 #: class-tgm-plugin-activation.php:2241
 msgid "Required Update not Available"
-msgstr ""
+msgstr "Vyžadovaná aktualizácia nieje dostupná."
 
 #: class-tgm-plugin-activation.php:2244
 msgid "Requires Update"
-msgstr ""
+msgstr "Vyžadujeme aktualizáciu"
 
 #: class-tgm-plugin-activation.php:2247
 msgid "Update recommended"
-msgstr ""
+msgstr "Odporúčaná aktualizácia"
 
 #: class-tgm-plugin-activation.php:2255
 #, php-format
 msgctxt "%1$s = install status, %2$s = update status"
 msgid "%1$s, %2$s"
-msgstr ""
+msgstr "%1$s, %2$s"
 
 #: class-tgm-plugin-activation.php:2304
 #, php-format
 msgctxt "plugins"
 msgid "All <span class=\"count\">(%s)</span>"
 msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Všetko <span class=\"count\">(%s)</span>"
+msgstr[1] "Všetko <span class=\"count\">(%s)</span>"
+msgstr[2] "Všetko <span class=\"count\">(%s)</span>"
 
 #: class-tgm-plugin-activation.php:2308
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
 msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "K inštalácií <span class=\"count\">(%s)</span>"
+msgstr[1] "K inštalácií <span class=\"count\">(%s)</span>"
+msgstr[2] "K inštalácií <span class=\"count\">(%s)</span>"
 
 #: class-tgm-plugin-activation.php:2312
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
 msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dostupná aktualizácia <span class=\"count\">(%s)</span>"
+msgstr[1] "Dostupná aktualizácia <span class=\"count\">(%s)</span>"
+msgstr[2] "Dostupná aktualizácia <span class=\"count\">(%s)</span>"
 
 #: class-tgm-plugin-activation.php:2316
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
 msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "K aktivácií <span class=\"count\">(%s)</span>"
+msgstr[1] "K aktivácií <span class=\"count\">(%s)</span>"
+msgstr[2] "K aktivácií <span class=\"count\">(%s)</span>"
 
 #: class-tgm-plugin-activation.php:2409
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
-msgstr ""
+msgstr "neznáma"
 
 #: class-tgm-plugin-activation.php:2417
 msgid "Installed version:"
-msgstr ""
+msgstr "Nainštalovaná verzia:"
 
 #: class-tgm-plugin-activation.php:2425
 msgid "Minimum required version:"
-msgstr ""
+msgstr "Minimálna vyžadovaná verzia:"
 
 #: class-tgm-plugin-activation.php:2437
 msgid "Available version:"
-msgstr ""
+msgstr "Dostupná verzia:"
 
 #: class-tgm-plugin-activation.php:2461
 #, php-format
@@ -324,136 +560,142 @@ msgid ""
 "No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
 "Dashboard</a>"
 msgstr ""
+"Žiadny modul na inštaláciu, aktiváciu alebo aktualizáciu. <a href=\"%1$s"
+"\">Vrátiť sa na nástenku</a>"
 
 #: class-tgm-plugin-activation.php:2477
 msgid "Plugin"
-msgstr ""
+msgstr "Modul"
 
 #: class-tgm-plugin-activation.php:2478
 msgid "Source"
-msgstr ""
+msgstr "Zdroj"
 
 #: class-tgm-plugin-activation.php:2479
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: class-tgm-plugin-activation.php:2483
 msgid "Version"
-msgstr ""
+msgstr "Verzia"
 
 #: class-tgm-plugin-activation.php:2484
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: class-tgm-plugin-activation.php:2508
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Install %2$s"
-msgstr ""
+msgstr "Nainštalovať %2$s"
 
 #: class-tgm-plugin-activation.php:2514
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Update %2$s"
-msgstr ""
+msgstr "Aktualizovať %2$s"
 
 #: class-tgm-plugin-activation.php:2520
 #, php-format
 msgctxt "%2$s = plugin name in screen reader markup"
 msgid "Activate %2$s"
-msgstr ""
+msgstr "Aktivovať %2$s"
 
 #: class-tgm-plugin-activation.php:2591
 msgid "Upgrade message from the plugin author:"
-msgstr ""
+msgstr "Aktualizačná správa od autora modulu."
 
 #: class-tgm-plugin-activation.php:2624
 msgid "Install"
-msgstr ""
+msgstr "Nainštalovať"
 
 #: class-tgm-plugin-activation.php:2630
 msgid "Update"
-msgstr ""
+msgstr "Aktualizovať"
 
 #: class-tgm-plugin-activation.php:2633
 msgid "Activate"
-msgstr ""
+msgstr "Aktivovať"
 
 #: class-tgm-plugin-activation.php:2694
 msgid "No plugins are available to be installed at this time."
-msgstr ""
+msgstr "Žiadny modul nieje dostupný k inštalácií."
 
 #: class-tgm-plugin-activation.php:2696
 msgid "No plugins are available to be updated at this time."
-msgstr ""
+msgstr "Žiadny modul nieje dostupný k aktualizácií."
 
 #: class-tgm-plugin-activation.php:2819
 msgid "No plugins are available to be activated at this time."
-msgstr ""
+msgstr "Žiadny modul nieje dostupný k aktivácií."
 
 #: class-tgm-plugin-activation.php:3015
 msgid "Plugin activation failed."
-msgstr ""
+msgstr "Aktivácia modulu zlyhala."
 
 #: class-tgm-plugin-activation.php:3354
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
+msgstr "Aktualizujem modul %1$s (%2$d/%3$d)"
 
 #: class-tgm-plugin-activation.php:3358
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
+msgstr "Vyskytla sa chyba pri inštalácií %1$s: <strong>%2$s</strong>."
 
 #: class-tgm-plugin-activation.php:3359
 #, php-format
 msgid "The installation of %1$s failed."
-msgstr ""
+msgstr "Inštalácia %1$s zlyhala."
 
 #: class-tgm-plugin-activation.php:3363
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
+"Inštalačný a aktivačný proces bol odštartovaný. Tento proces môže trvať "
+"niekoľko minút, prosím vydržte."
 
 #: class-tgm-plugin-activation.php:3364
 #, php-format
 msgid "%1$s installed and activated successfully."
-msgstr ""
+msgstr "%1$s bol úspešne nainštalovaný a aktivovaný."
 
 #: class-tgm-plugin-activation.php:3364 class-tgm-plugin-activation.php:3371
 msgid "Show Details"
-msgstr ""
+msgstr "Zobraziť detaily"
 
 #: class-tgm-plugin-activation.php:3364 class-tgm-plugin-activation.php:3371
 msgid "Hide Details"
-msgstr ""
+msgstr "Schovať detaily"
 
 #: class-tgm-plugin-activation.php:3365
 msgid "All installations and activations have been completed."
-msgstr ""
+msgstr "Všetky inštalácie a aktivácie boli dokončené."
 
 #: class-tgm-plugin-activation.php:3366
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
+msgstr "Inštalujem a aktivujem modul %1$s (%2$d/%3$d)"
 
 #: class-tgm-plugin-activation.php:3370
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
+"Inštalačný proces bol odštartovaný. Tento proces môže trvať niekoľko minút, "
+"prosím vydržte."
 
 #: class-tgm-plugin-activation.php:3371
 #, php-format
 msgid "%1$s installed successfully."
-msgstr ""
+msgstr "%1$s bol úspešne nainštalovaný."
 
 #: class-tgm-plugin-activation.php:3372
 msgid "All installations have been completed."
-msgstr ""
+msgstr "Všetky inštalácie boli dokončené."
 
 #: class-tgm-plugin-activation.php:3373
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
+msgstr "Inštalujem modul %1$s (%2$d/%3$d)"

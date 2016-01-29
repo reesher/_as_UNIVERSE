@@ -191,7 +191,7 @@ add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 				'source'             => get_stylesheet_directory() . '/lib/plugins/js_composer.zip', 
 				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 				'version'            => "4.9.2", // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
-				'force_activation'   => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
+				'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
 				'force_deactivation' => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins.
 				'external_url'       => '', // If set, overrides default API URL and points to an external URL.
 				'is_callable'        => '', // If set, this callable will be be checked for availability to determine if a plugin is active.
@@ -221,7 +221,18 @@ add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
 				'external_url'       => '',
 				'is_callable'        => '',
 ),
-
+// Include Visual Composer Massive Addons
+	array(
+				'name'               => 'M_Addons', 
+				'slug'               => 'massive-addons',
+				'source'             => get_stylesheet_directory() . '/lib/plugins/mpc-massive.zip', 
+				'required'           => true, 
+				'version'            => "5.1.6",
+				'force_activation'   => true, 
+				'force_deactivation' => false, 
+				'external_url'       => '',
+				'is_callable'        => '',
+),
 // Include Contact Form 7
 	array(
 				'name'      => 'Contact Form 7',
