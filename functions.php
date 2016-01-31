@@ -160,7 +160,12 @@ function load_custom_wp_admin_style() {
         wp_enqueue_style( 'admin_css' );
 }
 add_action( 'admin_enqueue_scripts', 'load_custom_wp_admin_style' );
-
+/**
+ * Change Author permalink to SK
+ */
+global $wp_rewrite;
+$wp_rewrite->author_base = “autor”;
+$wp_rewrite->flush_rules();
 
 /**
  * Load RequiredPlugins.
