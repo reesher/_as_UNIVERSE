@@ -193,7 +193,7 @@ $wp_rewrite->flush_rules();
 	array(
 				'name'               => 'Visual Composer', 
 				'slug'               => 'visual_composer', 
-				'source'             => get_stylesheet_directory() . '/lib/plugins/js_composer.zip', 
+				'source'             => get_stylesheet_directory() . '/plugins/js_composer.zip', 
 				'required'           => true, // If false, the plugin is only 'recommended' instead of required.
 				'version'            => "4.9.2", // E.g. 1.0.0. If set, the active plugin must be this version or higher. If the plugin version is higher than the plugin version installed, the user will be notified to update the plugin.
 				'force_activation'   => true, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch.
@@ -205,7 +205,7 @@ $wp_rewrite->flush_rules();
 	array(
 				'name'               => 'Revolution Slider', 
 				'slug'               => 'rev-slider',
-				'source'             => get_stylesheet_directory() . '/lib/plugins/revslider.zip', 
+				'source'             => get_stylesheet_directory() . '/plugins/revslider.zip', 
 				'required'           => false, 
 				'version'            => "5.1.6",
 				'force_activation'   => false, 
@@ -218,7 +218,7 @@ $wp_rewrite->flush_rules();
 	array(
 				'name'               => 'Git Updater', 
 				'slug'               => 'github-updater',
-				'source'             => get_stylesheet_directory() . '/lib/plugins/github-updater.zip', 
+				'source'             => get_stylesheet_directory() . '/plugins/github-updater.zip', 
 				'required'           => false, 
 				'version'            => "5.1.6",
 				'force_activation'   => true, 
@@ -230,7 +230,7 @@ $wp_rewrite->flush_rules();
 	array(
 				'name'               => 'M_Addons', 
 				'slug'               => 'massive-addons',
-				'source'             => get_stylesheet_directory() . '/lib/plugins/mpc-massive.zip', 
+				'source'             => get_stylesheet_directory() . '/plugins/mpc-massive.zip', 
 				'required'           => true, 
 				'version'            => "5.1.6",
 				'force_activation'   => true, 
