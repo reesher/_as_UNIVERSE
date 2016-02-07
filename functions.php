@@ -269,3 +269,20 @@ $config = array(
 );
 tgmpa( $plugins, $config );
 }
+
+//* Upload Logo from Theme Customizer *//
+function _as_theme_customizer( $wp_customize ) {
+	
+    $wp_customize->add_section( '_as_logo_section' , array(
+    'title'       => __( 'Logo', '_as' ),
+    'priority'    => 30,
+    'description' => 'Tu nahraj logo s adekvátnou šírkou a výškou.',
+) );
+	$wp_customize->add_setting( '_as_logo' );
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, '_as_logo', array(
+    'label'    => __( 'Logo', '_as' ),
+    'section'  => '_as_logo_section',
+    'settings' => '_as_logo',
+) ) );
+}
+add_action( 'customize_register', '_as_theme_customizer' );
